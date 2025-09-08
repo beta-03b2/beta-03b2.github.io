@@ -13,6 +13,49 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+  min-height: 60px;   /* ヘッダー高さを最低60px確保 */
+}
+
+header .logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* タイピングアニメーション */
+.typing {
+  display: inline-block;
+  border-right: 2px solid #58a6ff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* プロフィールカード */
+.profile-card {
+  background: #161b22;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.profile-card h2 {
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  margin: 6px 0;
 }
 
 header .logo {
