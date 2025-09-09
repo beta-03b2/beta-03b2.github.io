@@ -8,38 +8,36 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
+      <button class="menu-toggle">☰</button>
       <div class="brand">
         <h1 id="profile-typing"></h1>
       </div>
-      <nav class="main-nav">
-        <a href="index.html">ホーム</a>
-        <a href="profile.html">プロフィール</a>
-        <a href="links.html">リンク</a>
-      </nav>
-      <button class="menu-toggle">☰</button>
     </div>
+    <nav class="main-nav">
+      <a href="index.html">ホーム</a>
+      <a href="profile.html">プロフィール</a>
+      <a href="links.html">リンク</a>
+    </nav>
   </header>
 
   <main class="container">
     <section class="profile-card">
       <h2>基本情報</h2>
       <div class="profile-grid">
-        <div class="avatar">🧑‍💻</div>
+        <img src="assets/icon.png" alt="icon" class="avatar">
         <div class="profile-info">
-          <p><strong>Name:</strong> beta03b2</p>
-          <p><strong>Age:</strong> 14</p>
-          <p><strong>Skills:</strong> MINECRAFT Bedrock edition commands</p>
-          <p><strong>About:</strong> プロセカ、マイクラを主にやってます</p>
+          <p id="profile-line1"></p>
+          <p id="profile-line2"></p>
+          <p id="profile-line3"></p>
+          <p id="profile-line4"></p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>&copy; 2025 beta03b2</small>
-    </div>
+    <small>&copy; 2025 beta03b2</small>
   </footer>
 
   <script src="script.js"></script>
