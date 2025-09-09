@@ -8,23 +8,25 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
+      <button class="menu-toggle">☰</button>
       <div class="brand">
         <h1 id="title-typing"></h1>
       </div>
-      <nav class="main-nav">
-        <a href="index.html">ホーム</a>
-        <a href="profile.html">プロフィール</a>
-        <a href="links.html">リンク</a>
-      </nav>
-      <button class="menu-toggle">☰</button>
     </div>
+    <nav class="main-nav">
+      <a href="index.html">ホーム</a>
+      <a href="profile.html">プロフィール</a>
+      <a href="links.html">リンク</a>
+    </nav>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h2>ようこそ！</h2>
-      <p>ここは beta03b2 のホームページです。スマホでもPCでも見やすくリニューアルしました。</p>
+    <section class="hero" style="background-image:url('assets/header.jpg')">
+      <div class="hero-overlay">
+        <h2>ようこそ！</h2>
+        <p>ここは beta03b2 のホームページです。スマホでもPCでも見やすくリニューアルしました。</p>
+      </div>
     </section>
 
     <section class="cards">
@@ -40,9 +42,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>&copy; 2025 beta03b2</small>
-    </div>
+    <small>&copy; 2025 beta03b2</small>
   </footer>
 
   <script src="script.js"></script>
